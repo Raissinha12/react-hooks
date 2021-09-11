@@ -1,31 +1,31 @@
 import './Content.css'
 import React from "react"
 import { Switch, Route } from 'react-router-dom'
-import Home from '../../views/contents/Home'
-import Conteudo01 from '../../views/contents/Conteudo01'
-import Conteudo02 from '../../views/contents/Conteudo02'
-import Conteudo03 from '../../views/contents/Conteudo03'
-import NaoEncontrado from '../../views/contents//NaoEncontrado'
+import Hooks from '../../views/contents/Hooks'
+import UseState from '../../views/contents/UseState'
+import UseEffect from '../../views/contents/UseEffect'
+import UseContext from '../../views/contents/UseContext'
+import NaoEncontrado from '../../views/contents/NaoEncontrado'
 
 const Content = props => (
-    <main className="Content">
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route path="/conteudo01/:usuario">
-                <Conteudo01 />
-            </Route>
-            <Route path="/conteudo02">
-                <Conteudo02 />
-            </Route>
-            <Route path="/conteudo03">
-                <Conteudo03 />
-            </Route>
-            <Route path="*">
-                <NaoEncontrado />
-            </Route>            
-        </Switch>
+    <main className = "Content">
+            <switch>
+                <Route exact path="/">
+                    <Hooks />
+                </Route>
+                <Route path="/UseState">
+                    <UseState />
+                </Route>
+                <Route path="/UseEffect">
+                    <UseEffect />
+                </Route>
+                <Route path="/UseContext">
+                    <UseContext />
+                </Route>
+                <Route path="/NaoEncontrado">
+                    <NaoEncontrado />
+                </Route>
+            </switch>
     </main>
 )
-export default Content
+export default Content 

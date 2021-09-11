@@ -1,0 +1,15 @@
+.a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(215, 179, 245)
+}
+
+a:visited {
+    color: rgb(215, 179, 245)
+}
+
+a:hover {
+    color: rgb(100, 10, 173)
+}
